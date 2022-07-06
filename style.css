@@ -1,0 +1,145 @@
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    src: url(./Fonts/IRANSansLight.woff) format('woff'), url(./Fonts/IRANSansLight.ttf) format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fonticon';
+    src: url(./Fonts/FontIcon.woff) format('woff'), url(./Fonts/FontIcon.ttf) format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SDF Subsidiary';
+    src: url(./Fonts/IranRegular.eot);
+    src: url(./Fonts/IranRegular.eot?#iefix) format('embedded-opentype'), url(./Fonts/IranRegular.woff) format('woff'), url(./Fonts/IranRegular.ttf) format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+body {
+    direction: rtl;
+    padding: 20px;
+    font-family: 'IRANSans';
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+h3, h4, h5 {
+    margin: 0px 0px;
+}
+
+.customizeMetalTable th{
+    padding: 18px 0px !important;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color: #193c93;
+    border: 1px solid #E8E7E7 !important;
+}
+
+.customizeMetalTable td {
+    padding: 17px 0px 3px 0px !important;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+    border: 1px solid #E8E7E7 !important;
+}
+.customizeMetalTable td.dataBtn{
+    padding: 9px 0px 11px 0px !important;
+    
+}
+
+.customizeMetalTable td.dataPrice{
+    font-weight: bold;
+font-size: 15px;
+color: #193c93;
+}
+
+.customizeMetalTable thead{
+    background-color: #F5F5F5;
+}
+
+.customizeMetalTable .btn-gray{
+    background-color: #A4A5A7;
+    color: #fff;
+    padding: 7px 8px 7px 30px;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.3s ease all;
+}
+.customizeMetalTable .btn-gray:hover{
+    background-color: #193C93;   
+}
+.customizeMetalTable  .btn-gray::after{
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    z-index: 5;
+    color: #fff;
+    font-family: 'fonticon';
+    content: '\E797';
+    font-size: 19px;
+}
+
+.customizeMetalTable  tbody tr:nth-child(odd){
+    background-color: #FFF7F7;
+    color: #000;
+  }
+
+.customizeMetalTable   tbody tr:nth-child(even){
+    background-color: #fff;
+    color: #000;
+}
+.customizeMetalTable .customizeHeaderTable {
+    padding: 15px 10px;
+    border-radius: 5px 5px 0px 0px;
+    background: #74767b;
+}
+
+.customizeMetalTable .customizeHeaderTable h4{
+    margin: 0;
+    color: #fff;
+    padding-right: 22px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.customizeMetalTable {
+    margin-top: 50px;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {   
+    .customizeMetalTable th {
+     
+        font-size: 10px;
+    }
+    .customizeMetalTable td {
+     
+        font-size: 12px;
+    }
+    .customizeMetalTable td.dataBtn {
+        padding: 9px 4px 11px 4px !important;
+    }
+    .customizeMetalTable td.dataPrice {
+        font-size: 12px;
+    }
+    .customizeMetalTable .btn-gray {      
+        padding: 7px 2px;
+        font-size: 10px;
+    }
+    .customizeMetalTable .btn-gray::after {
+       display: none;
+    }
+}
